@@ -1,6 +1,6 @@
 import java.lang.reflect.Array;
 
-RenderableSystem<Firework> fireworks = new RenderableSystem<>(Firework.class, 50);
+RenderableSystem<Firework> fireworks = new RenderableSystem<>(Firework.class, 20);
 
 PostProcessing post = new PostProcessing(2);
 
