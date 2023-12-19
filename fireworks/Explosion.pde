@@ -23,8 +23,7 @@ class Explosion implements Renderable {
   void explode(PVector pos){
     this.pos = pos.copy();
     for (int i = 0; i < particlesAmount; i++) {
-      PVector particleDir = new PVector(1, 0);
-      particleDir.setHeading(random(TWO_PI));
+      PVector particleDir = PVector.random2D();
       particleDir.setMag(random(particlesRange));
       
       particles.add(new FadingParticle(pos.copy(),
